@@ -31,3 +31,5 @@ jobs:
       with:
           # Comma-delimited list of path globs for asset files to upload
           files: mastml.pex
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
