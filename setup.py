@@ -49,7 +49,7 @@ setup(
         "certifi==2018.4.16",
         "chardet==3.0.4",
         "citeproc-py==0.4",
-        "configobj==5.0.6",
+        "configobj",
         "cryptography",
         "cycler==0.10.0",
         "Cython==0.29.13",
