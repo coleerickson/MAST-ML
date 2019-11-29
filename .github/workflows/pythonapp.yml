@@ -13,10 +13,16 @@ jobs:
       uses: actions/setup-python@v1
       with:
         python-version: 3.7
-    - name: Install package from pip
+    - name: Install mastml package from pip
       run: |
         python -m pip install --upgrade pip
         pip install mastml
     - name: Run setup script
       run: |
         python setup.py install
+    - name: Install pex package from pip
+      run: |
+        pip install pex
+    - name: Run pex
+      run: |
+        pex -o mastml.pex . -e mastml.mastml_driver:main
