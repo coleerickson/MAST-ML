@@ -28,6 +28,7 @@ jobs:
         pex -o mastml.pex . -e mastml.mastml_driver:main
     - name: Release mastml.pex to GitHub
       uses: softprops/action-gh-release@v1
+      if: startsWith(github.ref, 'refs/tags/')
       with:
         # Comma-delimited list of path globs for asset files to upload
         files: mastml.pex
