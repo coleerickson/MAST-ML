@@ -49,7 +49,6 @@ setup(
         "certifi",
         "chardet",
         "citeproc-py",
-        "configobj",
         "cryptography",
         "cycler",
         "Cython",
