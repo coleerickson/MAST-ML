@@ -80,7 +80,7 @@ setup(
         "nbformat",
         "networkx==2.1",
         "nose==1.3.7",
-        "numpy==1.15.4",
+        "numpy==1.15.4",  # Higher versions don't work. See https://github.com/numpy/numpy/issues/14384
         "openpyxl",
         "packaging",
         "palettable==3.1.1",
