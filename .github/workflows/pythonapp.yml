@@ -26,7 +26,7 @@ jobs:
     - name: Run pex
       run: |
         pex -o mastml.pex . -e mastml.mastml_driver:main
-    - name: GH Release
+    - name: Release mastml.pex to GitHub
       uses: softprops/action-gh-release@v0.1.0
       with:
           # Comma-delimited list of path globs for asset files to upload
