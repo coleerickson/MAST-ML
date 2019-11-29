@@ -28,7 +28,7 @@ from mastml.legos import clusterers as legos_clusterers
 
 log = logging.getLogger('mastml')
 
-def main(conf_path, data_path, outdir, verbosity=0):
+def run(conf_path, data_path, outdir, verbosity=0):
     """
     This method is responsible for setting up the initial stage of the MAST-ML run, such as parsing input directories to
     designate where data will be imported and results saved to, as well as creation of the MAST-ML run log.
@@ -1409,7 +1409,10 @@ def get_commandline_args():
             os.path.abspath(args.data_path),
             os.path.abspath(args.outdir),
             verbosity)
+                                   
+def main():
+    conf_path, data_path, outdir, verbosity = get_commandline_args()
+    run(conf_path, data_path, outdir, verbosity)
 
 if __name__ == '__main__':
-    conf_path, data_path, outdir, verbosity = get_commandline_args()
-    main(conf_path, data_path, outdir, verbosity)
+    main()
