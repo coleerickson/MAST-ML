@@ -53,7 +53,6 @@ setup(
         "Cython",
         "decorator",
         "dominate",
-        "et_xmlfile",
         "forestci",
         "future",
         "globus_nexus_client",
