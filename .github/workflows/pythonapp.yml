@@ -22,7 +22,7 @@ jobs:
         pip install pex
     - name: Build multiplatform .pex Python executable
       run: |
-        pex -v -o mastml.pex . -e mastml.mastml_driver:main --platform macosx_10.12-x86_64-cp-37-m --platform macosx_10.13-x86_64-cp-37-m --platform macosx_10.14-x86_64-cp-37-m --platform manylinux2010-x86_64-cp-37-m --platform win32-x32-cp-37-m --platform win_amd64-x86_64-cp-37-m
+        pex -v -o mastml.pex . -e mastml.mastml_driver:main --platform macosx_10.12-x86_64-cp-37-m --platform macosx_10.13-x86_64-cp-37-m --platform macosx_10.14-x86_64-cp-37-m --platform manylinux2010-x86_64-cp-37-m --platform win32-x32-cp-37-m --platform win_amd64-x86_64-cp-37-m --disable-cache
     - name: Release mastml.pex to GitHub
       uses: softprops/action-gh-release@v1
       if: startsWith(github.ref, 'refs/tags/')
