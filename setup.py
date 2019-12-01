@@ -49,7 +49,7 @@ setup(
         "certifi",
         "chardet",
         "citeproc-py",
-        "cryptography",
+        "cryptography==2.1.4",
         "cycler",
         "Cython",
         "decorator",
