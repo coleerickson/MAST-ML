@@ -66,7 +66,7 @@ setup(
         "ipython-genutils",
         "jdcal",
         "jsonschema",
-        "jwt",
+        "jwt==0.5.4",
         "keras",
         "kiwisolver",
         "matminer",
