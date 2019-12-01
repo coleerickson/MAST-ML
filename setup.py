@@ -53,7 +53,6 @@ setup(
         "Cython",
         "decorator",
         "dominate",
-        "duecredit",
         "et_xmlfile",
         "forestci",
         "future",
